@@ -1,0 +1,7 @@
+# Environment file
+.env
+
+# Settings files
+.DS_Store
+.idea/
+venv/
