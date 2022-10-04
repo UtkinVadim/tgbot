@@ -5,3 +5,10 @@
 .DS_Store
 .idea/
 venv/
+
+# SQLite databases
+*.sqlite3
+*.sqlite
+
+# Bot files
+.handler-saves
