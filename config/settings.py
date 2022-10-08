@@ -86,3 +86,5 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 TG_TOKEN = os.getenv("TG_TOKEN")
+
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
