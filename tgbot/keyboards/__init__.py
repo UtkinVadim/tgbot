@@ -1,2 +1,2 @@
-from .main_menu import MAIN_MENU
-from .button_menu import BUTTON_MENU
+from .next_button import NEXT_BUTTON
+from .remove_keyboard import REMOVE_KEYBOARD
