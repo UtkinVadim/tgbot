@@ -3,3 +3,6 @@ run_bot:
 
 run_web:
 	python manage.py runserver
+
+run docker:
+	docker-compose up --build tg_bot
