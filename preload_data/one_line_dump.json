@@ -59,21 +59,13 @@
     "model": "tgbot.message",
     "pk": 7,
     "fields": {
-      "text": "1. Люблю и умею работать в команде.",
-      "image": "avengers.jpg"
-    }
-  },
-  {
-    "model": "tgbot.message",
-    "pk": 8,
-    "fields": {
       "text": "2. Стрессоустойчив.",
       "image": "harold.png"
     }
   },
   {
     "model": "tgbot.message",
-    "pk": 9,
+    "pk": 8,
     "fields": {
       "text": "3. Ответственный. Всегда довожу начатое до конца.",
       "image": "responsibility.jpeg"
@@ -81,7 +73,7 @@
   },
   {
     "model": "tgbot.message",
-    "pk": 10,
+    "pk": 9,
     "fields": {
       "text": "4. Могу находить креативный подход к решению задач.",
       "image": "creativity.jpeg"
@@ -89,7 +81,7 @@
   },
   {
     "model": "tgbot.message",
-    "pk": 11,
+    "pk": 10,
     "fields": {
       "text": "5. Если я чего-то не знаю - могу быстро этому научиться.",
       "image": "fast_learner.jpeg"
@@ -97,7 +89,7 @@
   },
   {
     "model": "tgbot.message",
-    "pk": 12,
+    "pk": 11,
     "fields": {
       "text": "6. Стараюсь самостоятельно решать поставленные задачи.",
       "image": "cat.jpeg"
@@ -105,7 +97,7 @@
   },
   {
     "model": "tgbot.message",
-    "pk": 13,
+    "pk": 12,
     "fields": {
       "text": "7. Пунктуален. Завершаю поставленные задачи в срок, не люблю опаздывать.",
       "image": "punkt.jpeg"
@@ -113,7 +105,7 @@
   },
   {
     "model": "tgbot.message",
-    "pk": 14,
+    "pk": 13,
     "fields": {
       "text": "8. Способен эффективно выполнять срочные задачи.",
       "image": "productivity.jpeg"
@@ -121,31 +113,15 @@
   },
   {
     "model": "tgbot.message",
+    "pk": 14,
+    "fields": {
+      "text": "9. Готов прийти на помощь коллегам при необходимости.",
+      "image": "help.jpeg"
+    }
+  },
+  {
+    "model": "tgbot.message",
     "pk": 15,
-    "fields": {
-      "text": "9. Готов прийти на помощь коллегам при необходимости.",
-      "image": "help.jpeg"
-    }
-  },
-  {
-    "model": "tgbot.message",
-    "pk": 16,
-    "fields": {
-      "text": "10. Не боюсь задач, решения которых не видно на первый взгляд.",
-      "image": "puzzle.jpg"
-    }
-  },
-  {
-    "model": "tgbot.message",
-    "pk": 17,
-    "fields": {
-      "text": "9. Готов прийти на помощь коллегам при необходимости.",
-      "image": "help.jpeg"
-    }
-  },
-  {
-    "model": "tgbot.message",
-    "pk": 18,
     "fields": {
       "text": "10. Не боюсь задач, решения которых не видно на первый взгляд.",
       "image": "puzzle.jpg"
