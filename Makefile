@@ -5,4 +5,4 @@ run_web:
 	python manage.py runserver
 
 run docker:
-	docker-compose up --build tg_bot
+	docker-compose up --build -d tgbot
