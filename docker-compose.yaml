@@ -1,9 +1,23 @@
-version: '3.8'
+version: '3.9'
+
 services:
 
-  tg_bot:
+  tgbot:
+    container_name: web
+    restart: always
     build: .
-    container_name: tg_bot
+    ports:
+      - ${APP_HOST}:${APP_PORT}:8000
     env_file:
       - .env
-    restart: always
+    command:
+      sh scripts/run_web.sh
+    volumes:
+      - ../static:/app/static
+      - ./tgbot_db.sqlite3:/app/tgbot_db.sqlite3
+    networks:
+      - bot-network
+
+networks:
+  bot-network:
+    external: false

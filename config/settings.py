@@ -5,11 +5,29 @@ from dotenv import find_dotenv, load_dotenv
 
 load_dotenv(find_dotenv(raise_error_if_not_found=False))
 
+
+def get_env_bool(env_name: str, default=False) -> bool:
+    env_value = os.getenv(env_name)
+    if env_value:
+        return env_value.lower() in ["t", "true", "1"]
+
+    return default
+
+
+def get_env_list(env_name: str, default: list = None) -> list:
+    env_value = os.getenv(env_name)
+    default = default or []
+    if env_value:
+        return env_value.split(",")
+
+    return default
+
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv("SECRET_KEY")
-DEBUG = bool(os.getenv("DEBUG"))
-ALLOWED_HOSTS = []
+DEBUG = get_env_bool("DEBUG")
+ALLOWED_HOSTS = get_env_list("ALLOWED_HOSTS")
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -88,3 +106,5 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 TG_TOKEN = os.getenv("TG_TOKEN")
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+STATIC_ROOT = BASE_DIR / "static"
